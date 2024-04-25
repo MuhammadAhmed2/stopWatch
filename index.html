@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <video autoplay muted loop class="bg-video">
+        <source src="./assets/spaceBG.mp4" type="video/mp4">
+    </video>
+    <audio autoplay loop class="bg-audio">
+        <source src="./assets/Atmosphere.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="content">
+            <h1>
+                <span id="h1">0</span>
+                :
+                <span id="m1">0</span>
+                :
+                <span id="s1">0</span>
+            </h1>
+            
+            <div class="bts">
+                <button onclick="timer()">START</button>
+                <button onclick="Stop()">STOP</button>
+                <button onclick="reset()">RESET</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

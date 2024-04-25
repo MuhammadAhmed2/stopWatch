@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Arial', sans-serif; /* Update the font family */
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto;
+    height: auto;
+    z-index: -1;
+    opacity: 90%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: +1;
+}
+
+h1 {
+    font-size: 6vw;
+    color: aliceblue;
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5); 
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 12vw;
+    }
+}
+.content{
+    text-align: center;
+}
+
+.bts {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 95%;
+    color: white;
+    background: none;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+color: #8acffe; /* Darken the background color on hover */
+}
