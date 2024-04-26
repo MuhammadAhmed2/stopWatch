@@ -4,8 +4,12 @@ let h1 = document.querySelector("#h1");
 let sec = 0;
 let min = 0;
 let hrs = 0;
+let start = document.getElementById('st')
+let op = document.getElementById('op')
 
 function timer() {
+    start.style.display = 'none'
+    op.style.display = 'block'
     tikTik = setInterval(function() {    
        
         if (sec >= 59) {
@@ -25,6 +29,8 @@ function timer() {
 
 function Stop() {
     clearInterval(tikTik)
+    start.style.display = 'block'
+    op.style.display = 'none'
 }
 
 function reset() {
@@ -32,4 +38,5 @@ function reset() {
  s1.innerHTML = 0;
  m1.innerHTML = 0;
  h1.innerHTML = 0;
+
 }
